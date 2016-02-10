@@ -1,6 +1,6 @@
 FROM ubuntu:14.04.3
 
-env DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 ENV PACKER_VERSION 0.8.6
 RUN apt-get install -y wget unzip &&\
       apt-get clean &&\
